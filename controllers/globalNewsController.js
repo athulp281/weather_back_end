@@ -32,7 +32,7 @@ exports.getNewsById = async (req, res) => {
     const { id } = req.params;
 
     try {
-        const news = await GlobalNews.findByPk(id);
+        const news = await globalNews.findByPk(id);
         if (!news) {
             return res.status(404).json({ error: "News not found" });
         }
@@ -48,7 +48,7 @@ exports.updateNews = async (req, res) => {
     const newsImage = req.file ? req.file.path : null;
 
     try {
-        const news = await GlobalNews.findByPk(id);
+        const news = await globalNews.findByPk(id);
         if (!news) {
             return res.status(404).json({ error: "News not found" });
         }
@@ -75,7 +75,7 @@ exports.deleteNews = async (req, res) => {
     const { id } = req.params;
 
     try {
-        const news = await GlobalNews.findByPk(id);
+        const news = await globalNews.findByPk(id);
         if (!news) {
             return res.status(404).json({ error: "News not found" });
         }
