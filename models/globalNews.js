@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const GlobalNews = sequelize.define("GlobalNews", {
+    const GlobalNews = sequelize.define("globalnews", {
         newsTitle: {
             type: DataTypes.STRING,
             allowNull: false,
