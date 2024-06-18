@@ -11,6 +11,6 @@ console.log("__dirname:", __dirname); // Log current directory
 console.log("Resolved path:", path.resolve(__dirname, "./globalnews")); // Log resolved path
 
 db.user = require("./user")(sequelize, Sequelize);
-db.globalnews = require("./globalnews")(sequelize, Sequelize);
+// db.globalnews = require("./globalnews")(sequelize, Sequelize);
 
 module.exports = db;
