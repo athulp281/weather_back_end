@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const globalnews = sequelize.define("globalnews", {
+    const GlobalNews = sequelize.define("GlobalNews", {
         newsTitle: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -14,5 +14,5 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
-    return globalnews;
+    return GlobalNews;
 };
