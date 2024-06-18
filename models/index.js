@@ -9,6 +9,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.user = require("./user")(sequelize, Sequelize);
-db.globalnews = require("../models/globalnews.js")(sequelize, Sequelize);
+db.globalnews = require("../models/globalnewsmodel.js")(sequelize, Sequelize);
 
 module.exports = db;
